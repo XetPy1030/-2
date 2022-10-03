@@ -1,0 +1,363 @@
+.section1 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 150px;
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        .title {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 60px;
+            line-height: 85px;
+            /* or 142% */
+
+            color: #00194a;
+        }
+        .description {
+            color: #00194a;
+
+            mix-blend-mode: normal;
+            opacity: 0.8;
+        }
+        .button {
+            background-color: #ff0043;
+            border-radius: 30px;
+            width: fit-content;
+            padding: 20px 50px;
+            margin-top: 50px;
+        }
+    }
+}
+
+.section2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 100px;
+
+    .card {
+        width: 200px;
+
+        .name {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 26px;
+
+            color: #00194a;
+        }
+        .description {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 26px;
+            /* or 162% */
+
+            color: #00194a;
+
+            mix-blend-mode: normal;
+            opacity: 0.8;
+        }
+
+        .link {
+            text-decoration: underline;
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            text-decoration-line: underline;
+            color: #00194a;
+            mix-blend-mode: normal;
+            opacity: 0.5;
+            position: relative;
+        }
+
+        .description::after {
+            content: "";
+        }
+        .link::after {
+            content: url("../images/download.png");
+            position: absolute;
+            left: 200px;
+        }
+    }
+}
+
+.section3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    margin-left: 37px;
+
+    .text {
+        width: 500px;
+
+        .title {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 35px;
+            line-height: 50px;
+            /* or 143% */
+
+            color: #00194a;
+        }
+        .description {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 28px;
+            /* or 156% */
+
+            color: #00194a;
+
+            mix-blend-mode: normal;
+            opacity: 0.8;
+        }
+    }
+}
+
+.section4 {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 150px;
+
+    .main {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .title {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 35px;
+            line-height: 50px;
+            color: #00194a;
+        }
+        .description {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 28px;
+            color: #00194a;
+            mix-blend-mode: normal;
+            opacity: 0.8;
+        }
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        padding-left: 50px;
+
+        .part1,
+        .part2 {
+            height: 500px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .part2 {
+            padding-left: 50px;
+        }
+
+        .card {
+            width: 260px;
+            // height: 250px;
+            padding-left: 20px;
+            padding-bottom: 40px;
+            padding-top: 100px;
+            box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+
+            .card-text {
+                position: relative;
+
+                .name {
+                    font-family: "Roboto";
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: #00194a;
+                }
+                .description {
+                    font-family: "Roboto";
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 23px;
+                    color: #00194a;
+                    mix-blend-mode: normal;
+                    opacity: 0.8;
+                }
+            }
+            .card-text::before {
+                position: absolute;
+                top: -70px;
+            }
+
+            .image-shield::before {
+                content: url("../images/shield.png");
+            }
+            .image-share::before {
+                content: url("../images/share.png");
+            }
+            .image-comment::before {
+                content: url("../images/comment.png");
+            }
+        }
+    }
+}
+
+.section5 {
+    display: flex;
+    flex-direction: row;
+    padding-left: 124px;
+    padding-top: 50px;
+
+    .images {
+        padding-right: 80px;
+        padding-bottom: 200px;
+        flex-direction: row;
+
+        .oval {
+            position: relative;
+            left: -200px;
+            top: 200px;
+        }
+    }
+
+    .content-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .title {
+            width: 465px;
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 35px;
+            line-height: 50px;
+            /* or 143% */
+
+            color: #00194a;
+        }
+
+        .description {
+            width: 465px;
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 28px;
+            /* or 156% */
+
+            color: #00194a;
+
+            mix-blend-mode: normal;
+            opacity: 0.8;
+        }
+    }
+}
+
+.section6 {
+    background-color: #00194a;
+    padding: 50px 0px;
+    margin: 0px 150px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 50px;
+        text-align: center;
+        color: #ffffff;
+        margin: 0;
+        padding-bottom: 30px;
+    }
+    .description {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+        color: #ffffff;
+        margin: 0;
+        padding-bottom: 50px;
+        width: 580px;
+    }
+    .button {
+        text-align: center;
+        width: fit-content;
+        padding: 20px 50px;
+        background-color: #ff0043;
+        border-radius: 30px;
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 81px 150px;
+
+    .about {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: #00194a;
+    }
+
+    .shares {
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .text {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            /* identical to box height */
+            
+            text-align: right;
+            
+            color: #00194A;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+}
